@@ -162,7 +162,7 @@ const About = () => {
           <h3>Hobbies</h3>
           <p>
             Besides programming, I love to cook traditional Indian cuisine, watch mystery movies or
-            web-series and, go out for long walks in non-urban locations.
+            web-series and, go out for long walks.
           </p>
         </StyledText>
 

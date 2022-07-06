@@ -69,7 +69,7 @@ const Hero = () => {
         Hochschule Bonn-Rhein-Sieg, Germany
         </a>
         . */}
-        Presently, my area of research is indoor robot navigation, with a special focus on semantic
+        Presently my area of research is indoor robot navigation, with a special focus on semantic
         navigation.
       </p>
     </>
