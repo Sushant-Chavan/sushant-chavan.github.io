@@ -162,7 +162,7 @@ const ArchivePage = ({ location, data }) => {
               <tr>
                 <th>Year</th>
                 <th>Title</th>
-                <th className="hide-on-mobile">Made at</th>
+                <th className="hide-on-mobile">Developed at</th>
                 <th className="hide-on-mobile">Built with</th>
                 <th>Link</th>
               </tr>
@@ -170,7 +170,15 @@ const ArchivePage = ({ location, data }) => {
             <tbody>
               {projects.length > 0 &&
                 projects.map(({ node }, i) => {
-                  const { date, github, external, title, tech, company } = node.frontmatter;
+                  const {
+                    youtube,
+                    date,
+                    github,
+                    external,
+                    title,
+                    tech,
+                    company,
+                  } = node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
@@ -197,6 +205,11 @@ const ArchivePage = ({ location, data }) => {
                           {github && (
                             <a href={github} aria-label="GitHub Link">
                               <Icon name="GitHub" />
+                            </a>
+                          )}
+                          {youtube && (
+                            <a href={youtube} aria-label="YouTube Link">
+                              <Icon name="YouTube" />
                             </a>
                           )}
                           {external && (
@@ -238,6 +251,7 @@ export const pageQuery = graphql`
             github
             external
             company
+            youtube
           }
           html
         }
