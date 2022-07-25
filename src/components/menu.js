@@ -131,13 +131,13 @@ const StyledSidebar = styled.aside`
         margin: 0 auto 10px;
       }
 
-      &:before {
-        content: '0' counter(item) '.';
-        display: block;
-        margin-bottom: 5px;
-        color: var(--green);
-        font-size: var(--fz-sm);
-      }
+      //   &:before {
+      //     content: '0' counter(item) '.';
+      //     display: block;
+      //     margin-bottom: 5px;
+      //     color: var(--green);
+      //     font-size: var(--fz-sm);
+      //   }
     }
 
     a {
