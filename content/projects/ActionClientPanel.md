@@ -7,7 +7,7 @@ tech:
   - C++
   - ROS
   - RViz
-company: 'b-it-bots@Work Hochschule Bonn-Rhein-Sieg'
+company: 'b-it-bots, Hochschule Bonn-Rhein-Sieg'
 showInProjects: true
 ---
 

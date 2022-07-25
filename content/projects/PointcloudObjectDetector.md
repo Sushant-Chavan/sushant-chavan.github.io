@@ -7,7 +7,7 @@ tech:
   - PCL
   - ROS
   - C++
-company: 'b-it-bots@Home Hochschule Bonn-Rhein-Sieg'
+company: 'b-it-bots, Hochschule Bonn-Rhein-Sieg'
 showInProjects: true
 ---
 
