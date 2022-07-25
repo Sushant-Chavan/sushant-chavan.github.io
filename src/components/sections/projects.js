@@ -115,7 +115,7 @@ const StyledProject = styled.li`
 
   .project-title {
     margin: 0 0 10px;
-    color: var(--lightest-slate);
+    color: var(--green);
     font-size: var(--fz-xxl);
 
     a {
@@ -134,8 +134,29 @@ const StyledProject = styled.li`
     }
   }
 
+  .project-company {
+    margin: 0 0 10px;
+    color: var(--lightest-slate);
+    font-size: var(--fz-xl);
+
+    a {
+      position: static;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
   .project-description {
-    color: var(--light-slate);
+    color: var(--slate);
     font-size: 17px;
 
     a {
@@ -181,6 +202,8 @@ const Projects = () => {
               tech
               github
               external
+              youtube
+              company
             }
             html
           }
@@ -212,7 +235,7 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { company, youtube, github, external, title, tech } = frontmatter;
 
     return (
       <div className="project-inner">
@@ -225,6 +248,11 @@ const Projects = () => {
               {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                   <Icon name="GitHub" />
+                </a>
+              )}
+              {youtube && (
+                <a href={youtube} aria-label="YouTube Link" target="_blank" rel="noreferrer">
+                  <Icon name="YouTube" />
                 </a>
               )}
               {external && (
@@ -245,6 +273,8 @@ const Projects = () => {
               {title}
             </a>
           </h3>
+
+          <div className="project-company" dangerouslySetInnerHTML={{ __html: company }} />
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
         </header>
