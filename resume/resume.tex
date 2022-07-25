@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.5, 1 December 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\usepackage{hyperref}
+\hypersetup{
+    %bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=black,        % color of links to bibliography
+    filecolor=black,      % color of file links
+    urlcolor=black           % color of external links
+}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{444444}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Sushant Vijay Chavan}
+\tagline{Graduate student at Hochschule Bonn-Rhein-Sieg}
+\photo{4cm}{Profile_circle.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \mailaddress{Grantham-Allee 21, 53757 Sankt Augustin, Germany}\\
+  \phone{+49-163-9809177}
+  \hspace{1.3cm}\location{Bonn, Germany}\\
+  \email{gitecsvc@gmail.com}
+  \hspace{1cm}\homepage{sushant-chavan.github.io}\\
+  %\twitter{@twitterhandle}
+  \github{github.com/Sushant-Chavan}
+  \linkedin{linkedin.com/in/sushantvchavan}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{orcid.org/0000-0000-0000-0000} 
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Career Objective}
+%Software engineer with a 4+ years of rice experience working on low-end embedded devices in the car infotainment industry. 
+Pursuing a master's degree in autonomous systems with 4+ years of professional experience in the  software development industry. Seeking a student job in the field of semantic mapping/navigation and multi-robot systems.
+
+\cvsection{Experience}
+
+\cvevent{Wissenschaftliche Hilfskraft (Research Assistant)}{ROPOD Project, Hochschule Bonn-Rhein-Sieg}{June 2019 -- April 2020}{Sankt Augustin, Germany}
+Developed software for simulating a multi-robot fleet management system. Implemented continuous integration tests for evaluating the coordination and resource usage by the robot fleet.
+
+\divider
+
+\cvevent{Senior Software Engineer}{Robert Bosch Engineering and Business Solutions Private Limited}{September 2013 -- December 2017}{Bangalore, India}
+Fulfilled various roles as a C++ \& 3D computer graphics developer. I was responsible for the design and development of next-gen, enhanced 3D navigation map graphics features, that are optimized to run on low-end embedded in-vehicle infotainment systems.
+
+\cvsection{Projects}
+
+\cvevent{Master Thesis - Composable Ontology-based Indoor Semantic Map}{Hochschule Bonn-Rhein-Sieg}{December 2021 – June 2022}{}
+
+A novel framework to flexibly transform and merge a prior collection of heterogeneous metric-semantic indoor maps, that can be used in conjunction with a knowledge-base to plan context-dependent navigation plans that allow the robot to overcome some open-challenges in indoor robot navigation.
+
+
+\divider
+
+\cvevent{Comparative analysis of Experience Based Path Planning Frameworks for Multi-Robot Systems}{Hochschule Bonn-Rhein-Sieg}{December 2018 – August 2019}{}
+
+\begin{itemize}
+	\item We ported three experience-based planning frameworks (Lightning, Thunder, and EGraphs) to solve multi-robot path planning problems and quantitatively compared them using a custom-written benchmarking framework. 
+	\item Our goal was to evaluate the suitability of experience-based planners in the context of the ROPOD project, where a fleet of multiple robots is assigned a task to pick up and deliver several supply-carts to different locations in a hospital environment.
+\end{itemize}
+
+\divider
+
+% \cvevent{Development of RViz plugins for RoboCup teams}{b-it-bots, Hochschule Bonn-Rhein-Sieg}{October 2018 – January 2019}{}
+% %\begin{itemize}
+% %	\item We developed a \textit{Map Annotation Tool} that eases annotating robot navigation maps with goal poses, by allowing storage, retrieval, and editing of navigational goal markers.
+% %	\item We developed a \textit{Action Client Panel} that eases the task of sending goals to an action server. The panel provides a GUI for selecting actions, setting their parameters, sending action goals and monitoring progress of action execution.
+% %\end{itemize}
+% \begin{itemize}
+% \item  We developed two RViz plugins called \textit{Map Annotation Tool} and \textit{Action Client Panel}. The map annotation tool facilitates annotating navigation maps efficiently and flexibly. The action client panel provides a GUI for selecting actions, setting their parameters, sending action goals and monitoring the progress of action execution.
+% \end{itemize}
+
+%\medskip
+%
+%\cvsection{A Day of My Life}
+%
+%% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+%% \wheelchart{outer radius}{inner radius}{
+%% comma-separated list of value/text width/color/detail}
+%\wheelchart{1.5cm}{0.5cm}{%
+%  6/8em/accent!30/{Sleep,\\beautiful sleep},
+%  3/8em/accent!40/Hopeful novelist by night,
+%  8/8em/accent!60/Daytime job,
+%  2/10em/accent/Sports and relaxation,
+%  5/6em/accent!20/Spending time with family
+%}
+
+%\clearpage
+%\cvsection[page2sidebar]{Publications}
+%
+%\nocite{*}
+
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+%
+%\divider
+%
+%\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article]
+%
+%\divider
+%
+%\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
