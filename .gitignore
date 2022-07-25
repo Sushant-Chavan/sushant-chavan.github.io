@@ -9,3 +9,23 @@ package-lock.json
 .DS_Store
 
 .vscode/
+
+static/resume/resume.bcf
+
+static/resume/resume.run.xml
+
+static/resume/resume.synctex.gz
+
+static/resume/resume.aux
+
+static/resume/resume.bbl
+
+static/resume/resume.blg
+
+static/resume/resume.fdb_latexmk
+
+static/resume/resume.fls
+
+static/resume/resume.log
+
+static/resume/resume.out
