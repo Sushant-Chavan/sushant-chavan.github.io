@@ -38,7 +38,7 @@ const StyledTabList = styled.div`
     width: calc(100% + 100px);
     padding-left: 50px;
     margin-left: -50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   @media (max-width: 480px) {
     width: calc(100% + 50px);
@@ -79,7 +79,7 @@ const StyledTabButton = styled.button`
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   text-align: left;
-  white-space: nowrap;
+  white-space: normal;
 
   @media (max-width: 768px) {
     padding: 0 15px 2px;
@@ -286,8 +286,8 @@ const Jobs = () => {
                     hidden={activeTabId !== i}>
                     <h3>
                       <span>{title}</span>
+                      &nbsp;@&nbsp;
                       <span className="company">
-                        &nbsp;@&nbsp;
                         <a href={url} className="inline-link">
                           {company}
                         </a>
