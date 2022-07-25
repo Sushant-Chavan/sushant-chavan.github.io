@@ -18,8 +18,9 @@ const StyledProjectsSection = styled.section`
   }
 
   .archive-link {
+    margin: 80px;
     font-family: var(--font-mono);
-    font-size: var(--fz-sm);
+    font-size: var(--fz-lg);
     &:after {
       bottom: 0.1em;
     }
@@ -299,10 +300,6 @@ const Projects = () => {
         Open-sourced Projects
       </h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
-      </Link>
-
       <ul className="projects-grid">
         {prefersReducedMotion ? (
           <>
@@ -337,6 +334,10 @@ const Projects = () => {
       <button className="more-button" onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
       </button>
+
+      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+        View complete projects archive
+      </Link>
     </StyledProjectsSection>
   );
 };
