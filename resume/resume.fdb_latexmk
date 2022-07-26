@@ -1,13 +1,13 @@
 # Fdb version 3
-["biber resume"] 1658764777 "resume.bcf" "resume.bbl" "resume" 1658764780
-  "resume.bcf" 1658764779 101223 d246d37166141b075c536aa0a90a666f "pdflatex"
+["biber resume"] 1658764777 "resume.bcf" "resume.bbl" "resume" 1658765213
+  "resume.bcf" 1658765213 101223 d246d37166141b075c536aa0a90a666f "pdflatex"
   (generated)
-  "resume.bbl"
   "resume.blg"
-["pdflatex"] 1658764779 "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.tex" "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.pdf" "resume" 1658764780
+  "resume.bbl"
+["pdflatex"] 1658765212 "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.tex" "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.pdf" "resume" 1658765213
   "/etc/texmf/web2c/texmf.cnf" 1636831328 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.aux" 1658764779 1076 27b6595a2a60ce5fabfee4746d5aea9e ""
-  "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.tex" 1658764777 9066 4c7ea49cf9fab6b04a14506cc42f767b ""
+  "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.aux" 1658765213 1076 27b6595a2a60ce5fabfee4746d5aea9e ""
+  "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.tex" 1658765212 9110 4df4e36fa6bac41dd8b3d335a9bd17a4 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc" 1561498483 2908 33404fff2a7b8e169974e96af0be5333 ""
@@ -201,17 +201,17 @@
   "Profile_circle.jpg" 1658762988 693397 ed444cc2279f78e6a1e27dc7efb88c01 ""
   "altacv.cls" 1658763382 11584 61eee0303f20fda665adf0dd9e8fa9a7 ""
   "page1sidebar.tex" 1658762988 1781 fe15df264eaac519c8f1d80347167691 ""
-  "resume.aux" 1658764779 1076 27b6595a2a60ce5fabfee4746d5aea9e "pdflatex"
+  "resume.aux" 1658765213 1076 27b6595a2a60ce5fabfee4746d5aea9e "pdflatex"
   "resume.bbl" 1658764778 466 f7f239c736cf01ac6ce7bd829f9b3c7b "biber resume"
-  "resume.out" 1658764779 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "resume.run.xml" 1658764779 2321 782f8219de0461c39b716bdfd481fc57 "pdflatex"
-  "resume.tex" 1658764777 9066 4c7ea49cf9fab6b04a14506cc42f767b ""
+  "resume.out" 1658765213 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "resume.run.xml" 1658765213 2321 782f8219de0461c39b716bdfd481fc57 "pdflatex"
+  "resume.tex" 1658765212 9110 4df4e36fa6bac41dd8b3d335a9bd17a4 ""
   (generated)
-  "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.pdf"
   "resume.log"
   "resume.aux"
+  "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.pdf"
   "resume.run.xml"
-  "resume.bcf"
+  "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.log"
   "resume.pdf"
   "resume.out"
-  "/home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.log"
+  "resume.bcf"
