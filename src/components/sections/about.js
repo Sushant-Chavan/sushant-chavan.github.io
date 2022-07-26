@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['C++', 'Python', 'ROS', 'Gazebo', 'GitLab CI', 'Docker'];
+  const skills = ['C++', 'Python', 'OWL', 'SWRL', 'ROS', 'Gazebo'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -161,8 +161,8 @@ const About = () => {
           <br></br>
           <h3>Hobbies</h3>
           <p>
-            Besides programming, I love to cook traditional Indian cuisine, watch mystery movies or
-            web-series and, go out for long walks.
+            Besides programming, I love to cook traditional Indian cuisine, go out for long walks
+            and, watch mystery shows.
           </p>
         </StyledText>
 
