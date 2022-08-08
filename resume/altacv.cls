@@ -117,13 +117,13 @@
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
-\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
+\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\smallskip}
 
 \newenvironment{fullwidth}{%
-    \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
+    \begin{adjustwidth}{}{\dimexpr+0.05cm-\marginparwidth-\marginparsep\relax}}
         {\end{adjustwidth}}
 
-\newcommand{\emailsymbol}{\faAt}
+\newcommand{\emailsymbol}{\faEnvelope}
 \newcommand{\phonesymbol}{\faPhone}
 \newcommand{\homepagesymbol}{\faChain}
 \newcommand{\locationsymbol}{\faMapMarker}
@@ -131,9 +131,9 @@
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
-\newcommand{\mailsymbol}{\faEnvelope}
+\newcommand{\mailsymbol}{\faHome}
 
-\newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{\normalfont #1}\hspace{0.5em}#2\hspace{2em}}}
+\newcommand{\printinfo}[2]{\mbox{\textcolor{emphasis}{\normalfont #1}\hspace{0.5em}\textcolor{body}{#2}\hspace{2em}}}
 
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
@@ -141,16 +141,18 @@
 \newcommand{\email}[1]{\printinfo{\emailsymbol}{\href{mailto:#1}{#1}}}
 \newcommand{\mailaddress}[1]{\printinfo{\mailsymbol}{#1}}
 \newcommand{\phone}[1]{\printinfo{\phonesymbol}{#1}}
-\newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{\href{http://#1}{#1}}}
+\newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{\href{#1}{#1}}}
 \newcommand{\twitter}[1]{\printinfo{\twittersymbol}{#1}}
 \newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{\href{http://www.#1}{#1}}}
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{\href{http://www.#1}{#1}}}
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 
+\newcommand{\githubproject}[1]{\href{#1}{\color{emphasis}\githubsymbol}}
+
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
-\newcommand{\makecvheader}{%
+\newcommand{\makecvheader}[1]{%
     \begingroup
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
             \raggedright\color{emphasis}%
@@ -168,7 +170,18 @@
             \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
             %    \fi%
         \end{minipage}\par}{}%
-    \endgroup\medskip
+    \endgroup\smallskip
+    \makecvobjective{#1}
+}
+
+\newcommand{\makecvobjective}[1]{%
+    \ifstrequal{#1}{}{}{
+        \begingroup
+            {\color{heading}\rule{\linewidth}{1pt}\par}\smallskip
+            {\color{accent}#1\par}
+            {\color{heading}\rule{\linewidth}{1pt}\par}\smallskip
+        \endgroup
+    }
 }
 
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
@@ -192,17 +205,16 @@
     \ifstrequal{#2}{}{}{
         \textbf{\color{accent}#2}\par
         \smallskip}
-    \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.5em}#3}}}%
-    \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}}\par
+    \ifstrequal{#3}{}{}{{\small\makebox[0.4\linewidth][l]{\faCalendar\hspace{0.5em}#3}}}%
+    \ifstrequal{#4}{}{}{{\small\makebox[0.6\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}}\par
     \medskip\normalsize
 }
 
 \newcommand{\cvachievement}[3]{%
-    \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
-        \multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2} \\
-                                                & #3
+    \begin{tabularx}{\linewidth}{@{}p{1.75em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
+        \multirow{2}{*}{\large\color{emphasis}#1} & \textcolor{accent}{#2}
     \end{tabularx}%
-    \smallskip
+    \medskip
 }
 
 \newcommand{\cvtag}[1]{%
@@ -210,9 +222,9 @@
 }
 
 \newcommand{\cvskill}[2]{%
-    \textcolor{emphasis}{\textbf{#1}}\hfill
+    \textcolor{accent}{\textbf{#1}}\hfill
     \foreach \x in {1,...,5}{%
-            \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+            \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{emphasis}}\ratingmarker}}\par%
 }
 
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
