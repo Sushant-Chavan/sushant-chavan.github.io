@@ -1,17 +1,14 @@
 ---
-date: '2019-08-13'
-title: 'Experience-based path planning for multi-robot systems'
-github: 'https://github.com/Sushant-Chavan/coordination_oru#experience-based-planning'
+date: '2020-05-27'
+title: 'Gazebo simulator for a fleet of mobile robots'
+github: 'https://github.com/Sushant-Chavan/multi_robot_sim'
 # external: 'https://github.com/Sushant-Chavan/multi_robot_sim/blob/kinetic/docs/demo.gif'
 tech:
-  - C++
+  - Gazebo
   - Python
-  - Java
   - ROS
-  - OMPL
-  - Shell-Scripting
 company: 'ROPOD project, Hochschule Bonn-Rhein-Sieg'
-showInProjects: true
+showInProjects: false
 ---
 
-An extension of a state-of-the-art robot fleet coordination framework, to evaluate the benefits of using a experience-based path planning algorithms. These algorithms allow for storing the previous path planning experiences into a database and reuse them, with slight modifications, during future planning.
+A ROS package to simulate a fleet of mobile logistic robots using Gazebo and ROS-Navigation. Provides simple interfaces to auto-generate configuration and launch files for an arbitrary number of robots that can be spawned at customized/random start locations.
