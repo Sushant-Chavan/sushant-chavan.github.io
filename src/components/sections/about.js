@@ -21,7 +21,7 @@ const StyledAboutSection = styled.section`
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: 35% 60%;
     grid-gap: 0 10px;
     padding: 0;
     margin: 20px 0 0 0;
@@ -125,7 +125,16 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['C++', 'Python', 'OWL', 'SWRL', 'ROS', 'Gazebo'];
+  const skills = [
+    'Modern C++',
+    'Robot Operating System (ROS)',
+    'Python',
+    'Point Cloud Library (PCL)',
+    'OpenCV',
+    'Web Ontology Language (OWL)',
+    'Indoor SLAM',
+    'Semantic Web Reasoning Language (SWRL)',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,20 +144,35 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              I am currently located in Bonn, Germany and am pursuing a Master's degree in{' '}
+              I am currently located in Bonn, Germany and will soon graduate with a Master's degree
+              in{' '}
               <a
                 href="https://www.h-brs.de/en/inf/study/master/autonomous-systems"
                 target="_blank"
                 rel="noreferrer">
                 Autonomous Systems
               </a>{' '}
-              from the Hochschule Bonn-Rhein-Sieg.
+              from the Hochschule Bonn-Rhein-Sieg. I am also a member of the{' '}
+              <a
+                href="https://mas-group.inf.h-brs.de/?page_id=622"
+                target="_blank"
+                rel="noreferrer">
+                b-it-bots@Home
+              </a>{' '}
+              team and participate in the{' '}
+              <a href="https://athome.robocup.org/" target="_blank" rel="noreferrer">
+                RoboCup@Home
+              </a>{' '}
+              international league competitions that provide me opportunities to translate my
+              academic knowledge into practical experiences of working with robots.
             </p>
 
             {/* <p>
-              Previously, I worked for 4+ years in the automobile industry developing 
-              software for the in-vehicle infotainment systems, and gained rich 
-              experience of developing highly optimized C++ applications for embedded systems.
+              Previously, I worked for 4+ years for a large MNC in the automobile industry developing 
+              software for the in-vehicle infotainment systems. I gained rich 
+              experience of developing highly optimized C++ applications for embedded
+              systems with limited computing power while being a part of diverse and multi-cultural
+              team spread across three continents.
             </p> */}
 
             <p>Here are a few technologies I've been working with recently:</p>
@@ -158,12 +182,28 @@ const About = () => {
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
 
-          <br></br>
-          <h3>Hobbies</h3>
-          <p>
-            Besides programming, I love to cook traditional Indian cuisine, go out for long walks
-            and, watch mystery shows.
-          </p>
+          <div>
+            <br></br>
+
+            <p>
+              My professional career spans the automotive navigation and indoor mobile robotics
+              domains. I have a rich experience of working in different environments ranging from
+              large multi-national companies and small startups to academic research projects. Being
+              a part of diverse and multi-cultural teams spread across several continents helped me
+              develop professional soft skills that allow me to easily interact and integrate with
+              people, both within and outside the team.
+            </p>
+          </div>
+
+          <div>
+            <br></br>
+
+            <h3>Hobbies</h3>
+            <p>
+              Besides programming, I love to cook traditional Indian cuisine, go out for long walks,
+              and watch mystery shows.
+            </p>
+          </div>
         </StyledText>
 
         <StyledPic>
