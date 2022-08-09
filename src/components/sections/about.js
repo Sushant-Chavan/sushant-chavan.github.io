@@ -134,6 +134,8 @@ const About = () => {
     'Web Ontology Language (OWL)',
     'Indoor SLAM',
     'Semantic Web Reasoning Language (SWRL)',
+    'Docker',
+    'Unified Robot Description Format (URDF)',
   ];
 
   return (
@@ -188,9 +190,9 @@ const About = () => {
             <p>
               My professional career spans the automotive navigation and indoor mobile robotics
               domains. I have a rich experience of working in different environments ranging from
-              large multi-national companies and small startups to academic research projects. Being
+              academic research projects and small startups to large multi-national companies. Being
               a part of diverse and multi-cultural teams spread across several continents helped me
-              develop professional soft skills that allow me to easily interact and integrate with
+              develop professional soft skills that enable me to easily interact and integrate with
               people, both within and outside the team.
             </p>
           </div>
