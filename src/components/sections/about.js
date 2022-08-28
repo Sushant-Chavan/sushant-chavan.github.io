@@ -161,11 +161,11 @@ const About = () => {
                 rel="noreferrer">
                 b-it-bots@Home
               </a>{' '}
-              team and participate in the{' '}
+              team and participated in the{' '}
               <a href="https://athome.robocup.org/" target="_blank" rel="noreferrer">
                 RoboCup@Home
               </a>{' '}
-              international league competitions that provide me opportunities to translate my
+              international league competitions that provided some opportunities to translate my
               academic knowledge into practical experiences of working with robots.
             </p>
 
