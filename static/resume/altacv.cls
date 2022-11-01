@@ -178,7 +178,7 @@
     \ifstrequal{#1}{}{}{
         \begingroup
             {\color{heading}\rule{\linewidth}{1pt}\par}\smallskip
-            {\color{accent}#1\par}
+            {\centering\color{accent}#1\par}
             {\color{heading}\rule{\linewidth}{1pt}\par}\smallskip
         \endgroup
     }
