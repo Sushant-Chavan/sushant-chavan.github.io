@@ -3,7 +3,7 @@ date: '2020-07-15'
 title: 'Research assistant'
 company: 'KELO Robotics'
 location: 'Bonn, Germany'
-range: 'July 2020 - Present'
+range: 'July 2020 - August 2022'
 url: 'https://www.kelo-robotics.com/'
 ---
 
