@@ -11,4 +11,4 @@ company: 'b-it-bots, Hochschule Bonn-Rhein-Sieg'
 showInProjects: true
 ---
 
-An RViz plugin to annotate occupancy grid with navigation goals.
+An RViz plugin to annotate occupancy grid maps with navigation goals.
