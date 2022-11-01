@@ -130,6 +130,7 @@
 \newcommand{\linkedinsymbol}{\faLinkedin}
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
+\newcommand{\youtubesymbol}{\faYoutubePlay}
 \newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faHome}
 
@@ -149,6 +150,7 @@
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 
 \newcommand{\githubproject}[1]{\href{#1}{\color{emphasis}\githubsymbol}}
+\newcommand{\youtubevideo}[1]{\href{#1}{\color{emphasis}\youtubesymbol}}
 
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 

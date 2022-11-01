@@ -328,6 +328,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Italic-T1-TLF.t
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lato/TS1lato-TLF.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lato/TS1lato-TLF.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Regular-TS1-TLF.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesomethree.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/typoland/lato/Lato-Bold-T1-TLF.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/typoland/lato/Lato-Bold-T1-TLF--base.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
@@ -352,6 +355,7 @@ INPUT /home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resu
 INPUT /home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.out
 INPUT /home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.run.xml
 OUTPUT /home/suvich15/Sushant/webpage/sushant-chavan.github.io/static/resume/resume.run.xml
+INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_rt66h3.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc
