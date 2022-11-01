@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Sushant Chavan',
     description:
-      'Sushant Chavan is a pursuing a masters in autonomous systems and loves programming robots.',
+      'Sushant Chavan is a master\'s graduate in autonomous systems and loves programming robots.',
     siteUrl: 'https://sushant-chavan.github.io/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
