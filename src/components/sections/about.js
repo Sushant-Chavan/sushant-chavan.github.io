@@ -146,15 +146,14 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              I am currently located in Bonn, Germany and will soon graduate with a Master's degree
-              in{' '}
+              I am currently located in Bonn, Germany and am a recent graduate of the Master's in{' '}
               <a
                 href="https://www.h-brs.de/en/inf/study/master/autonomous-systems"
                 target="_blank"
                 rel="noreferrer">
                 Autonomous Systems
               </a>{' '}
-              from the Hochschule Bonn-Rhein-Sieg. I am also a member of the{' '}
+              program at the Hochschule Bonn-Rhein-Sieg, Germany. I have been a member of the{' '}
               <a
                 href="https://mas-group.inf.h-brs.de/?page_id=622"
                 target="_blank"
@@ -165,8 +164,8 @@ const About = () => {
               <a href="https://athome.robocup.org/" target="_blank" rel="noreferrer">
                 RoboCup@Home
               </a>{' '}
-              international league competitions that provided some opportunities to translate my
-              academic knowledge into practical experiences of working with robots.
+              international league competitions that provided opportunities to translate my academic
+              knowledge into practical experiences of working with robots.
             </p>
 
             {/* <p>
@@ -177,25 +176,21 @@ const About = () => {
               team spread across three continents.
             </p> */}
 
+            <p>
+              My professional career spans the automotive navigation and indoor mobile robotics
+              domains. I have a rich experience of working in different environments ranging from an
+              academic research project and a small startup to a large multinational company. Being
+              a part of diverse and multi-cultural teams spread across several continents has helped
+              me develop professional soft skills that enable me to easily interact and integrate
+              with people, both within and outside the team.
+            </p>
+
             <p>Here are a few technologies I've been working with recently:</p>
           </div>
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
-
-          <div>
-            <br></br>
-
-            <p>
-              My professional career spans the automotive navigation and indoor mobile robotics
-              domains. I have a rich experience of working in different environments ranging from
-              academic research projects and small startups to large multi-national companies. Being
-              a part of diverse and multi-cultural teams spread across several continents helped me
-              develop professional soft skills that enable me to easily interact and integrate with
-              people, both within and outside the team.
-            </p>
-          </div>
 
           <div>
             <br></br>
