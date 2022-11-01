@@ -8,7 +8,7 @@ tech:
   - ROS
   - RViz
 company: 'b-it-bots, Hochschule Bonn-Rhein-Sieg'
-showInProjects: true
+showInProjects: false
 ---
 
 An RViz plugin to annotate occupancy grid maps with navigation goals.
